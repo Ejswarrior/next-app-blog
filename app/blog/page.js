@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function Blog() {
     const [name, setName] = useState('')
@@ -9,7 +8,6 @@ export default function Blog() {
     
 
     const blogPost = async() => {
-        const router = useRouter()
         await fetch('http://localhost:3000/api/post', {
             method: 'POST',
             headers: {
@@ -23,8 +21,7 @@ export default function Blog() {
         
         setName('')
         setBlog('')
-        router.replace('/')
-    }
+        }
 
     return (
         <div>

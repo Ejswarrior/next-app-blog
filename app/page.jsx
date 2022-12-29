@@ -1,6 +1,7 @@
 
 import { Inter } from '@next/font/google'
-
+import Blog from './blog/page'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,16 +17,20 @@ export default async function Home() {
   return (
    <div>
         <h1>Welcome to Eriks blog</h1>
+        <Blog/>
           <div>
           {data.foundPosts.map((posts) => {
             return(
             <>
             <h3>Posted by {posts.firstName}</h3>
+            <Link href={`/blog/${posts._id}`}>Link To Blog</Link>
             <p>{posts.blog}</p>
             </>
             )
           })}
           </div>
+    
    </div>
   )
 }
+  
