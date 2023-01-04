@@ -1,0 +1,29 @@
+.title {
+    color: rgb(91, 91, 172);
+    text-shadow: 30px;
+}
+
+.div {
+    background-color: rgb(248, 246, 244);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+
+.posts{
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 10px;
+}

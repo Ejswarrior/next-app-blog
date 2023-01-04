@@ -15,4 +15,4 @@ return(
             <p>{data.blog}</p>
         </div>
     )
-}3
+}
